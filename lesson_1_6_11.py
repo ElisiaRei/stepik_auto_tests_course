@@ -12,11 +12,11 @@ service = Service(executable_path=path)
 
 #browser = webdriver.Chrome(service=service)
 
-link = "https://suninjuly.github.io/registration2.html"
+link = "https://suninjuly.github.io/registration1.html"
 
 
 try:
-    browser = webdriver.Chrome(service=service)
+    browser = webdriver.Chrome()
     browser.get(link)
 
     input1 = browser.find_element(By.CSS_SELECTOR, '.first_block .first')
